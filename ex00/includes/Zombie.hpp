@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/02 13:25:12 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 18:40:28 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/17 19:08:01 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 class Zombie {
 public:
 	~Zombie(void);
-	void 			announce(void);
-	void			setName(std::string str);
+	void 			announce( void );
+	void			setName( std::string str );
 private:
 	std::string		name;
 };
 
-Zombie*	newZombie(std::string name);
-void	randomChump(std::string name);
+Zombie*	newZombie( std::string name );
+void	randomChump( std::string name );
 
 #endif

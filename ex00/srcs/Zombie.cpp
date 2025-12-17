@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 18:01:05 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 18:55:09 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/17 19:07:14 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	Zombie::announce() {
 	std::cout << this->name << ": : BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void	Zombie::setName(std::string str) {
+void	Zombie::setName( std::string str ) {
 	this->name = str;
 }
 
-Zombie::~Zombie(void) {
+Zombie::~Zombie( void ) {
 	std::cout << this->name << " is destroyed." << std::endl;
 }

@@ -6,13 +6,13 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 18:06:51 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 18:59:01 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/17 19:06:58 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie*	newZombie(std::string name) {
+Zombie*	newZombie( std::string name ) {
 	Zombie *newChump;
 	
 	newChump = new Zombie();
