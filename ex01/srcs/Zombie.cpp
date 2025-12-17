@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 18:01:05 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 19:36:37 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/17 20:07:44 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 Zombie::Zombie( void ) {
 	this->name = "";
-}
-
-Zombie::Zombie( std::string str ) {
-	this->name = str;
 }
 
 void	Zombie::announce() {
