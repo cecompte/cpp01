@@ -6,31 +6,19 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/02 13:30:17 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/10 14:59:57 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/17 18:59:09 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
-#include "Contact.hpp"
-#include <iostream>
-#include <string>
-
+#include "Zombie.hpp"
 
 int main()
 {
-	std::string command;
-	PhoneBook phoneBook;
-
-	std::cout << "Input command [ADD, SEARCH or EXIT]: ";
-	std::getline(std::cin, command);
-	while (command != "EXIT")
-	{
-		if (command == "ADD")
-			phoneBook.addContact();
-		else if (command == "SEARCH")
-			phoneBook.search();
-		std::cout << "Input command [ADD, SEARCH or EXIT]: ";
-		std::getline(std::cin, command);
-	}
-	return (0);
+	Zombie *Zombie1;
+	
+	Zombie1 = newZombie("Jacques le chien");
+	Zombie1->announce();
+	delete Zombie1;
+	
+	randomChump("Sokaya");
 }

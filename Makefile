@@ -1,14 +1,15 @@
 CC				= c++
 CFLAGS			= -g3 -std=c++98 -Wall -Wextra -Werror -MMD -MP
 
-NAME			= phonebook
+NAME			= zombie
 INCLUDES		= -Iincludes
 
 # Sources
 SRC_PATH		= srcs/
 SRC				= main.cpp \
-					PhoneBook.cpp \
-					Contact.cpp
+					newZombie.cpp \
+					randomChump.cpp \
+					Zombie.cpp
 SOURCES			= $(addprefix $(SRC_PATH), $(SRC))
 
 # Objects
