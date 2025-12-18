@@ -7,6 +7,7 @@ INCLUDES		= -I.
 # Sources
 SRC				= main.cpp \
 					HumanA.cpp \
+					HumanB.cpp \
 					Weapon.cpp
 
 # Objects
