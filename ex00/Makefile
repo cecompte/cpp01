@@ -2,15 +2,13 @@ CC				= c++
 CFLAGS			= -g3 -std=c++98 -Wall -Wextra -Werror -MMD -MP
 
 NAME			= zombie
-INCLUDES		= -Iincludes
+INCLUDES		= -I.
 
 # Sources
-SRC_PATH		= srcs/
 SRC				= main.cpp \
 					newZombie.cpp \
 					randomChump.cpp \
 					Zombie.cpp
-SOURCES			= $(addprefix $(SRC_PATH), $(SRC))
 
 # Objects
 OBJ_PATH		= obj/
@@ -35,7 +33,7 @@ $(NAME): $(OBJECTS)
 	@$(CC) $(CFLAGS) $(OBJECTS) -o $(NAME)
 	@printf "$(BLUE)%s$(RESET): $(GREEN)Successfully built $(NAME)$(RESET)\n" $(NAME)
 
-$(OBJ_PATH)%.o: $(SRC_PATH)%.cpp | $(OBJ_PATH)
+$(OBJ_PATH)%.o: %.cpp | $(OBJ_PATH)
 	@printf "$(BLUE)%s$(RESET): $(MAGENTA)Compiling$(RESET) $<\n" $(NAME)
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
