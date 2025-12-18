@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/17 20:06:49 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 20:22:30 by cecompte         ###   ########.fr       */
+/*   Created: 2025/12/02 13:30:17 by cecompte          #+#    #+#             */
+/*   Updated: 2025/12/18 14:09:27 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
+#include "HumanA.hpp"
+#include <string>
+#include <iostream>
 
-
-class HumanA {
-public:
-	HumanA( std::string str, Weapon W);
-	Weapon			WeaponA;
-	void			attack();
-private:
-	std::string		name;
+int main()
+{
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanA bob("Bob", club);
+		// bob.attack();
+		// club.setType("some other type of club");
+		// bob.attack();
+	}
+	return (0);
 }
