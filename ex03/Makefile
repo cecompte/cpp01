@@ -1,7 +1,7 @@
 CC				= c++
 CFLAGS			= -g3 -std=c++98 -Wall -Wextra -Werror -MMD -MP
 
-NAME			= weapon
+NAME			= attack
 INCLUDES		= -I.
 
 # Sources
