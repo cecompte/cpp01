@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 20:12:52 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/18 15:15:55 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:34:57 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <iostream>
 
 Weapon::Weapon() {
-	std::cout << "Weapon constructor called\n";
 	this->type = "";
 }
 

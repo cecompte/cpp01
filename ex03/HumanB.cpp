@@ -6,16 +6,14 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 12:29:58 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/19 18:19:51 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:34:28 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 #include <iostream>
 
-HumanB::HumanB( std::string str ) {
-	this->name = str;
-}
+HumanB::HumanB( std::string str ) : name(str) {}
 
 void	HumanB::attack() {
 	if (weaponB)

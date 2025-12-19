@@ -6,16 +6,14 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 18:01:05 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/17 19:18:35 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:32:15 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 #include <iostream>
 
-Zombie::Zombie( std::string str ) {
-	this->name = str;
-}
+Zombie::Zombie( std::string str ) : name(str) {}
 
 void	Zombie::announce() {
 	std::cout << this->name << ": : BraiiiiiiinnnzzzZ..." << std::endl;
