@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 12:29:58 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/18 15:26:49 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:19:51 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ HumanB::HumanB( std::string str ) {
 }
 
 void	HumanB::attack() {
-	std::cout << this->name << ": attacks with their " << this->weaponB->getType() << std::endl;
+	if (weaponB)
+		std::cout << this->name << ": attacks with their " << this->weaponB->getType() << "\n";
+	else
+		std::cout << "Error : null pointer\n";
 }
 
 void	HumanB::setWeapon( Weapon& someWeapon ) {

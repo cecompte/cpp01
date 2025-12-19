@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/19 13:15:00 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/19 15:36:51 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:20:32 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,11 @@ int main(void)
 	// Test 5: Empty replacement string
 	printTest("Empty replacement string");
 	{
-		std::string content = "Hello darling";
+		std::string content = "Hello darling you are amazing";
 		std::string result = replace(content, "darling", "");
 		std::cout << "Original: " << content << std::endl;
 		std::cout << "Result:   " << result << std::endl;
-		std::cout << "Expected: Hello darling" << std::endl;
+		std::cout << "Expected: Hello  you are amazing" << std::endl;
 	}
 
 	// Test 6: No match found

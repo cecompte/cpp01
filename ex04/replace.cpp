@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/19 15:30:00 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/19 15:33:27 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 18:20:05 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 std::string replace( std::string content, std::string s1, std::string s2 )
 {
-	if (s1.empty() || s2.empty() || content.empty())
+	if (s1.empty() || content.empty())
 		return (content);
 
 	size_t len_s1 = s1.size();
