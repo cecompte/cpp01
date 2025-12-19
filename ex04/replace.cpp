@@ -1,29 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.cpp                                          :+:      :+:    :+:   */
+/*   replace.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/19 12:21:45 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/19 12:24:03 by cecompte         ###   ########.fr       */
+/*   Created: 2025/12/19 15:30:00 by cecompte          #+#    #+#             */
+/*   Updated: 2025/12/19 15:33:27 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "replace.hpp"
-
-std::string	readFile( std::ifstream& inputFile )
-{
-	std::string content;
-	std::string line;
-	while (std::getline(inputFile, line)) {
-		content += line;
-		if (!inputFile.eof())
-			content += '\n';
-	}
-	inputFile.close();
-	return (content);
-}
 
 std::string replace( std::string content, std::string s1, std::string s2 )
 {
@@ -41,5 +28,3 @@ std::string replace( std::string content, std::string s1, std::string s2 )
 	}
 	return (content);
 }
-
-
