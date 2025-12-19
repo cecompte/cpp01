@@ -6,7 +6,7 @@
 /*   By: cecompte <cecompte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/02 13:30:17 by cecompte          #+#    #+#             */
-/*   Updated: 2025/12/19 15:42:26 by cecompte         ###   ########.fr       */
+/*   Updated: 2025/12/19 16:51:48 by cecompte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ bool isDirectory(const std::string& path)
 }
 
 int main(int argc, char **argv)
-{
+{	
+	if (argc != 4)
+		return (std::cout << "Wrong nb of arguments\n", 1);
+
 	std::string filename1 = argv[1];
 	std::string s1 = argv[2];
 	std::string s2 = argv[3];
-	
-	if (argc != 4)
-		return (std::cout << "Wrong nb of arguments\n", 1);
 	if (isDirectory(filename1))
 		return (std::cout << "Error: " << filename1 << " is a directory\n", 1);
 
