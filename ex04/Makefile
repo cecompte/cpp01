@@ -6,6 +6,7 @@ INCLUDES		= -I.
 
 # Sources
 SRC				= main.cpp \
+					utils.cpp
 
 # Objects
 OBJ_PATH		= obj/
